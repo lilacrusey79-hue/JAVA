@@ -1,0 +1,30 @@
+import java.util.*;
+public class Main 
+{
+    public static void main(String[]args)
+    {
+        Scanner p=new Scanner(System.in);
+        int [] marks=new int[5];
+        String []name=new String[5];
+        for(int i=0;i<5;i++)
+        {
+            System.out.println("Enter the mark& name of the student"+(i+1));
+            
+            marks[i]=p.nextInt();
+            p.nextLine();
+            
+            name[i]=p.nextLine();
+        }
+        System.out.println("--------------------");
+        int s=1;
+        for(int i=0;i<5;i++)
+        {
+            if(marks[i]>50)
+            {
+                System.out.println(s+""+name[i]+" has scored :"+marks[i]);
+                s++;
+            }
+        }
+    }
+    
+}
