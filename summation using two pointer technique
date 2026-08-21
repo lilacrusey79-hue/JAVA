@@ -1,0 +1,19 @@
+import java.util.Arrays;
+public class Main
+{
+    public static void main(String[]args)
+    {
+        int[]b={1,2,3,4,5,6};
+        int ft=0;
+        int lt=b.length-1;
+        
+        while(ft<lt)
+        {
+            System.out.println(b[ft]+b[lt]);
+            ft++;
+            lt--;
+            
+        }
+        
+    }
+}
